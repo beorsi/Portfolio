@@ -175,9 +175,8 @@ main {
     display: flex;
     position: relative;
     height: 100%;
-    transition: transform 0.3s ease;
+    animation: scroll 20s linear infinite; /* Adjust speed */
 }
-
 .CARROSSEL--item {
     width: 15vw;
     height: 100%;
@@ -185,6 +184,7 @@ main {
     display: flex; 
     justify-content: center;
     align-items: center;
+    user-select: none; /* Disable text selection */
 }
 
 .CARROSSEL--item img {
@@ -193,11 +193,17 @@ main {
     object-fit: contain;
 }
 
-.CARROSSEL--wrapper.smooth-transition {
-    transition: transform 0.8s ease; /* Longer transition for smoother effect */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
-.CARROSSEL--item:hover{
+.CARROSSEL--item:hover {
     transform: scale(1.25);
-    transition: .3s;
+    transition: 0.3s;
+    cursor: pointer;
 }
