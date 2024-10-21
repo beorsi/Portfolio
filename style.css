@@ -196,3 +196,8 @@ main {
 .CARROSSEL--wrapper.smooth-transition {
     transition: transform 0.8s ease; /* Longer transition for smoother effect */
 }
+
+.CARROSSEL--item:hover{
+    transform: scale(1.25);
+    transition: .3s;
+}

@@ -12,7 +12,7 @@ for (let i = 0; i < cloneCount; i++) {
 
 let scrollX = 0;
 let itemWidth = $items[0].clientWidth; // Width of a single item
-const autoScrollSpeed = 1; // Adjust scroll speed (higher value = faster)
+const autoScrollSpeed = 2.5; // Adjust scroll speed (higher value = faster)
 
 // Disable transition for jump
 const jumpToItem = (position) => {
@@ -58,3 +58,22 @@ initCarousel();
 
 // Start automatic scrolling
 setInterval(autoScroll, 30); // Adjust interval speed as needed
+
+
+// Smooth scrolling for section links
+const smoothScrollLinks = document.querySelectorAll('aside a');
+
+smoothScrollLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor click behavior
+        const targetId = this.getAttribute('href'); // Get the target section ID
+        const targetSection = document.querySelector(targetId); // Find the target section
+        const offsetTop = targetSection.offsetTop; // Get the offset top position of the target section
+
+        // Scroll to the target section smoothly
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth' // This enables the smooth scrolling behavior
+        });
+    });
+});
