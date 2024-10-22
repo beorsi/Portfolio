@@ -64,3 +64,15 @@ links.forEach(link => {
         });
     });
 });
+//clear func
+
+const nome = document.getElementById("nome");
+const mail = document.getElementById("mail");
+const MSG = document.getElementById("msg");
+
+function limpar(){
+  nome.value = "";
+  mail.value = "";
+  MSG.value = "";
+  alert("Mensagem enviada");
+}
