@@ -44,3 +44,23 @@ window.addEventListener('resize', () => {
   wrapWidth = $items.length * itemWidth;
   dispose(scrollX); // Update position on resize
 });
+
+
+// Select all anchor links in the #Secoes
+const links = document.querySelectorAll('#Secoes a');
+
+// Add click event listeners to each link
+links.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent the default anchor behavior
+
+        const targetId = link.getAttribute('href'); // Get the target section ID
+        const targetElement = document.querySelector(targetId); // Select the target element
+
+        // Scroll to the target element with smooth behavior
+        targetElement.scrollIntoView({
+            behavior: 'smooth', // Smooth scroll behavior
+            block: 'start' // Align to the start of the target
+        });
+    });
+});
