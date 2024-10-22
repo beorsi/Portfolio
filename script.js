@@ -7,7 +7,7 @@ let itemWidth = $items[0].clientWidth;
 let wrapWidth = $items.length * itemWidth;
 
 let scrollX = 0; // Current scroll position
-let scrollSpeed = 0.5; // Adjust this value to change the scroll speed
+let scrollSpeed = 1; // Adjust this value to change the scroll speed
 
 /*--------------------
 Dispose

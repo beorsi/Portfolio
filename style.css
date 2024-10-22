@@ -207,3 +207,67 @@ main {
     transition: 0.3s;
     cursor: pointer;
 }
+
+#Contato{
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    top: 150%;
+    left: 3%;
+}
+.texto{
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    height: 6vh;
+    padding-left: 1.8%;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 30%;
+    margin-right: 5%;
+}
+#linhanome{
+    margin-top: 5%;
+}
+#msg{
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 50%;
+    height: 22vh;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 1.8%;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    resize: none;
+    padding-top: 2%
+}
+
+#btn{
+    cursor: pointer;
+    width: 12%;
+    height: 5vh;
+    border: none;
+    border-radius: 25px;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 3%;
+}
+
+
+#Rodapé{
+    background-color: #728597;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 350%;
+    color:#FFFFFF ;
+    text-align: center;
+    align-content:center;
+}
