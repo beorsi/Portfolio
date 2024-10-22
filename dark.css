@@ -113,7 +113,7 @@ main {
 
 #TITProje {
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 20%;
     font-size: 40px;
 }
@@ -160,7 +160,7 @@ main {
     height: 30vh; 
     width: 100%;
     position: relative;
-    top: 140%;
+    top: 150%;
     left: 7%;
 }
 
@@ -212,7 +212,7 @@ main {
     width: 100%;
     height: 55vh;
     position: relative;
-    top: 150%;
+    top: 160%;
     left: 3%;
 }
 .texto{
@@ -270,7 +270,7 @@ main {
     width: 100%;
     height: 20vh;
     position: absolute;
-    top: 350%;
+    top: 360%;
     color:#FFFFFF ;
     text-align: center;
     align-content:center;
