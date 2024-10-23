@@ -74,5 +74,5 @@ function limpar(){
   nome.value = "";
   mail.value = "";
   MSG.value = "";
-  alert("Mensagem enviada");
+  alert("Mensagem enviada!");
 }
