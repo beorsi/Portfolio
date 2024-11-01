@@ -162,23 +162,26 @@ main {
 
 #DescProj1 {
     right: 15%;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #DescProj1 p {
     margin-top: 10%;
     margin-left: 5%;
     user-select:text;
+    text-align: justify;
 }
-
+h4{
+    margin-left: 35%
+}
 #DescProj2 {
-    left: 15%;
+    left: 10%;
     background-color: #42535A;
     font-size: 16px;
 }
 #DescProj2 p {
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 15%;
     user-select:text;
 }
 #DescProj3 {
@@ -195,7 +198,7 @@ main {
     margin-left: 9%;
 }
 #DescProj4 {
-    left: 15%;
+    left: 10%;
     font-size: 16px;
 }
 #DescProj4 p {
@@ -340,7 +343,7 @@ main {
     height: 20vh;
     position: absolute;
     top: 360%;
-    color: #FFFFFF;
+    color: #E8EEED;
     text-align: center;
     align-content: center;
 }
