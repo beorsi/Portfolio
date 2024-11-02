@@ -23,7 +23,7 @@ aside ul {
     list-style: none;
     color: #E8EEED;
     padding: 0;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 #Secoes {
@@ -79,7 +79,7 @@ main {
 
 #FotoEu {
     height: 20vh;
-    right: 27%;
+    right: 28%;
     top: 10%;
     position: absolute;
 }
@@ -123,7 +123,7 @@ main {
 }
 
 #Projetos {
-    margin-top: 30%;
+    margin-top: 25%;
     height: 80vh;
     width: 85%;
     position: absolute;
@@ -241,7 +241,7 @@ h4 {
     height: 30vh;
     width: 100%;
     position: relative;
-    top: 150%;
+    top: 120%;
     left: 7%;
 }
 
@@ -297,7 +297,7 @@ h4 {
     width: 100%;
     height: 55vh;
     position: relative;
-    top: 160%;
+    top: 125%;
     left: 3%;
 }
 
@@ -359,7 +359,7 @@ h4 {
     width: 100%;
     height: 20vh;
     position: absolute;
-    top: 410%;
+    top: 350%;
     color: #E8EEED;
     text-align: center;
     align-content: center;
@@ -656,7 +656,7 @@ h4 {
     }
     /* Footer adjustments */
     #Rodapé {
-        top: 250%;
+        top: 270%;
         bottom: 0;
         width: 100%;
         height: 10vh;
@@ -665,5 +665,6 @@ h4 {
     }
     #btn{
         width: 15%;
+        color: #111716;
     }
 }
