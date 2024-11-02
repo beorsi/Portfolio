@@ -1,0 +1,654 @@
+body {
+    margin: 0;
+    background-color: #E8EEED;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    user-select: none;
+}
+
+aside {
+    background-color: #A4B5BC;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+}
+
+aside ul {
+    list-style: none;
+    color: #111716;
+    padding: 0;
+    margin-left: 15%;
+}
+
+#Secoes {
+    margin-top: 20%;
+}
+
+#Secoes li {
+    margin-top: 10%;
+}
+
+#Secoes li:hover {
+    cursor: pointer;
+}
+
+#Secoes a {
+    text-decoration: none;
+    color: #111716;
+}
+
+#redes {
+    display: flex;
+    font-size: 40px;
+    margin-top: 30%;
+}
+
+#redes a {
+    color: #111716;
+}
+
+#redes li {
+    margin-right: 12%;
+}
+
+main {
+    color: #111716;
+    height: 150vh;
+    margin-left: 15%;
+    width: 70%;
+}
+
+#Title {
+    position: relative;
+    top: 12%;
+    left: 5%;
+}
+
+#Desgraca {
+    height: 50vh;
+    position: absolute;
+    right: 15%;
+    top: 20%;
+}
+
+#FotoEu {
+    height: 20vh;
+    right: 27%;
+    top: 10%;
+    position: absolute;
+    fill: #3D524D;
+}
+
+#Icons {
+    display: flex;
+    position: relative;
+    top: 18%;
+    left: 5%;
+}
+
+#Icons div {
+    margin-right: 5%;
+}
+
+.icone img {
+    height: 15vh;
+}
+
+.icone img:hover {
+    transform: scale(1.1);
+}
+
+#Lamp {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+#LampC {
+    height: 5vh;
+}
+#about {
+    position: absolute;
+    left: 65%;
+    top: 35%;
+    z-index: 3;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#Projetos {
+    margin-top: 30%;
+    height: 80vh;
+    width: 85%;
+    position: absolute;
+}
+
+#TITProje {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    font-size: 40px;
+}
+
+.linha {
+    z-index: 2;
+    width: 100%;
+    height: 30vh;
+    padding-top: 1.8vh;
+    display: flex;
+}
+
+.fotoEsq img {
+    height: 90%;
+    margin-left: 30%;
+}
+
+.fotoDir img {
+    height: 90%;
+    margin-left: 210%;
+}
+
+#DescProj1,
+#DescProj2,
+#DescProj3,
+#DescProj4,
+#DescProj5 {
+    background-color: #3D524D;
+    height: 30vh;
+    width: 36%;
+    border-radius: 50px;
+    position: absolute;
+}
+
+#DescProj1 {
+    right: 15%;
+    font-size: 14px;
+}
+
+#DescProj1 p {
+    margin-top: 10%;
+    margin-left: 5%;
+    user-select:text;
+    text-align: justify;
+}
+h4{
+    margin-left: 35%
+}
+#DescProj2 {
+    left: 10%;
+    background-color: #A4B5BC;
+    font-size: 16px;
+}
+#DescProj2 p {
+    margin-top: 10%;
+    margin-left: 15%;
+    user-select:text;
+}
+#DescProj3 {
+    right: 15%;
+    background-color: #687B8D;
+    font-size: 16px;
+}
+#DescProj3 p {
+    margin-top: 10%;
+    margin-left: 5%;
+    user-select:text;
+}
+#t3{
+    margin-left: 9%;
+}
+#DescProj4 {
+    left: 10%;
+    font-size: 16px;
+}
+#DescProj4 p {
+    margin-top: 10%;
+    margin-left: 5%;
+    user-select:text;
+}
+#DescProj5 {
+    right: 15%;
+    background-color: #687B8D;
+    font-size: 16px;
+}
+#DescProj5 p {
+    margin-top: 10%;
+    margin-left: 5%;
+    user-select:text;
+}
+#t5{
+    margin-left: 9%;
+}
+
+#Carrossel {
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    top: 150%;
+    left: 7%;
+}
+
+.CARROSSEL {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.CARROSSEL--wrapper {
+    display: flex;
+    position: relative;
+    height: 100%;
+    animation: scroll 20s linear infinite;
+    /* Adjust speed */
+}
+
+.CARROSSEL--item {
+    width: 15vw;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    /* Disable text selection */
+}
+
+.CARROSSEL--item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.CARROSSEL--item:hover {
+    transform: scale(1.25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#Contato {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    top: 160%;
+    left: 3%;
+}
+
+.texto {
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    height: 6vh;
+    padding-left: 1.8%;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 30%;
+    margin-right: 5%;
+}
+
+#linhanome {
+    margin-top: 5%;
+}
+
+#msg {
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 50%;
+    height: 22vh;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 1.8%;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    resize: none;
+    padding-top: 2%
+}
+
+#btn {
+    cursor: pointer;
+    width: 12%;
+    height: 5vh;
+    border: none;
+    border-radius: 25px;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 3%;
+    transition: .3s;
+    background-color: #bfc0c2;
+}
+
+#btn:hover {
+    transform: scale(1.2);
+    background-color: #abadaf;
+}
+
+#Rodapé {
+    background-color: #728597;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 360%;
+    color: #E8EEED;
+    text-align: center;
+    align-content: center;
+}
+/* Default sidebar styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    /* Expanded width */
+    z-index: 1000;
+    transition: transform 0.3s ease, width 0.3s ease;
+    /* Smooth transition for both width and transform */
+    overflow: hidden;
+}
+
+
+@media (max-width: 550px) {
+
+    /* General adjustments */
+    body {
+        font-size: 18px;
+        overflow-y: scroll;
+        /* Ensure scrolling */
+    }
+
+    #LampC {
+        height: 10%;
+        width: 45%;
+        z-index: 9999;
+    }
+    #Lamp{
+        z-index: 9999;
+    }
+    #barra {
+        position: absolute;
+        /* Fix position to the viewport */
+        left: 5%;
+        /* Adjust this value to position it as needed */
+        top: 4%;
+        /* Adjust this value to position it as needed */
+        z-index: 1001;
+        /* Keep it on top of other elements */
+    }
+
+
+    /* Main content area transition */
+    main {
+        transition: margin-left 0.3s ease;
+        margin-left: 0;
+        /* Full width when sidebar is hidden */
+    }
+
+    /* Sidebar adjustments */
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 9%;
+        z-index: 1000;
+        /* Ensure it stays on top */
+        transform: translateX(-100%);
+        /* Start off-screen */
+        transition: transform 0.3s ease;
+    }
+
+    /* Hidden sidebar styles */
+    #sidebar.hidden {
+        transform: translateX(-100%);
+        /* Keep sidebar off-screen */
+    }
+
+    /* Show sidebar */
+    #sidebar:not(.hidden) {
+        transform: translateX(0);
+        /* Bring sidebar into view */
+    }
+
+    /* Adjust main content when sidebar is hidden */
+    #sidebar.hidden+main {
+        margin-left: 0;
+        /* Main content takes full width */
+    }
+
+    aside ul {
+        margin: 0;
+        /* Reset margin */
+        padding-left: 5%;
+        /* Spacing within the sidebar */
+    }
+
+
+    #Secoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    #Secoes li {
+        margin-top: 15px;
+        /* Space between links */
+    }
+
+    #redes {
+        font-size: 22px;
+    }
+
+
+
+
+    /* Main content adjustments */
+    main {
+        /* Adjusted to match sidebar width */
+        width: 99%;
+        /* Take remaining space after sidebar */
+    }
+
+    #Title {
+        font-size: 18px;
+        position: absolute;
+        top: 5%;
+        left: 15%;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .icone img {
+        height: 9vh;
+    }
+
+    #Icons {
+        position: absolute;
+        left: 10%;
+        top: 22%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Icons div {
+        margin-right: 15%;
+    }
+
+    #FotoEu {
+        height: 90px;
+        position: absolute;
+        right: 30%;
+        top: 19%;
+        margin: 0 auto;
+        display: block;
+        z-index: 2;
+    }
+
+    /* SVG adjustments */
+    #Desgraca {
+        width: 182px;
+        height: 304px;
+        right: 5%;
+    }
+
+    #about {
+        font-size: 11px;
+        position: absolute;
+        top: 32%;
+        left: 52%;
+        text-align: justify;
+    }
+
+
+
+    /* Project section layout */
+    #Projetos {
+        margin-left: 0;
+        top: 45%;
+        width: 98%;
+        height: 155vh;
+    }
+
+    .fotoEsq img {
+        position: relative;
+        height: 45%;
+        margin-left: 0;
+        left: 10%;
+    }
+
+    .fotoDir img {
+        height: 90%;
+        margin-left: 21%;
+        height: 45%;
+    }
+
+    #TITProje {
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        font-size: 28px;
+    }
+
+    #DescProj1,
+    #DescProj2,
+    #DescProj3,
+    #DescProj4,
+    #DescProj5 {
+        width: 46%;
+        height: 18vh;
+        position: relative;
+        left: 25%;
+    }
+
+    #DescProj1 {
+        font-size: 9px;
+        position: relative;
+        margin: 0;
+        left: 8%;
+    }
+
+    #DescProj3 {
+        font-size: 9px;
+        position: relative;
+        margin: 0;
+        left: 8%;
+    }
+
+    #DescProj5 {
+        font-size: 9px;
+        position: relative;
+        margin: 0;
+        left: 8%;
+    }
+
+    #DescProj2 {
+        font-size: 9px;
+        position: relative;
+        margin: 0;
+        left: 5%;
+    }
+
+    #DescProj4 {
+        font-size: 9px;
+        position: relative;
+        margin: 0;
+        left: 5%;
+    }
+
+    .linha {
+        height: 25vh;
+    }
+
+    #Carrossel {
+        height: 25vh;
+        width: 90%;
+        position: relative;
+        top: 125%;
+        left: 7%;
+    }
+
+    /* Carousel adjustments */
+    .CARROSSEL {
+        width: 100%;
+    }
+
+    .CARROSSEL--wrapper {
+        height: 50%;
+    }
+
+    .CARROSSEL--item {
+        width: 35%;
+    }
+
+    /* Contact form adjustments */
+    #Contato {
+        width: 95%;
+        margin: 0;
+        font-size: 16px;
+        top: 120%;
+    }
+
+    #linhanome {
+        display: flex;
+    }
+
+    .texto {
+        width: 50%;
+        font-size: 14px;
+        height: 5vh;
+        margin-bottom: 4%;
+    }
+    /* Footer adjustments */
+    #Rodapé {
+        top: 250%;
+        bottom: 0;
+        width: 100%;
+        height: 10vh;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    #btn{
+        width: 15%;
+    }
+}

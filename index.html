@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="dark.css" id="themeStylesheet" >
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,9 @@
 </head>
 
 <body>
-    <aside>
+   
+    <aside id="sidebar" class="hidden">
+        
         <ul id="Secoes">
             <li><a href="#MAIN">Home</a></li>
             <li><a href="#Projetos">Projetos</a></li>
@@ -26,28 +28,32 @@
         </ul>
         <ul id="redes">
             <li><a href="https://github.com/beorsi"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/be.o.amaral/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://wa.me/5531995524519"><i class="fa-brands fa-whatsapp"></i></a></li>
         </ul>
     </aside>
+
+    <img src="Img/list_check_fill.png" alt="" id="barra">
+
     <main id="MAIN">
-        <div id="Lamp">
-            <img src="Img/lampC.png" alt="" id="LampC">
+        <div id="Lamp" >
+            <img src="Img/lampC.png" alt="" id="LampC" onclick="troca()">
         </div>
 
         <div id="Title">
-            Olá! Eu sou: <br>
+            Olá! <br>
+            Eu sou: <br>
             <h2>Bernardo Orsi do Amaral</h2>
         </div>
         <div id="Icons">
             <div class="icone">
-                <img src="Img/Terminal.png" alt="">
+                <img src="Img/Terminal.png" alt="" id="Term">
             </div>
             <div class="icone">
-                <img src="Img/Code.png" alt="">
+                <img src="Img/Code.png" alt="" id="Cod">
             </div>
             <div class="icone">
-                <img src="Img/Bracket.png" alt="">
+                <img src="Img/Bracket.png" alt="" id="Brack">
             </div>
         </div>
         <div>
@@ -74,7 +80,7 @@
                     <h4>ELIT PHOTO</h4>
                     <p>
                         Esse foi um projeto realizado utilizando html5 e css3 para aprender sobre o display-flex e
-                        reforçar conceitos básicos.
+                        reforçar conceitos básicos. <br>
                         https://github.com/beorsi/Display-Flex/tree/main
                     </p>
                 </div>
